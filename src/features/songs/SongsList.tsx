@@ -222,23 +222,21 @@ const SongsList = () => {
         </ConfirmOverlay>
       )}
       <CardGrid>
-        {[...songs]
-          .sort((a, b) => Number(b.id ?? 0) - Number(a.id ?? 0))
-          .map((song: Song) => {
-            const id = song.id ?? "";
-            return (
-              <SongCard
-                key={id}
-                id={id}
-                title={song.title}
-                artist={song.artist}
-                album={song.album}
-                year={String(song.year ?? "")}
-                onEdit={() => openEditModal(song)}
-                onDelete={() => handleDelete(id)}
-              />
-            );
-          })}
+        {songs.map((song: Song) => {
+          const id = song.id ?? "";
+          return (
+            <SongCard
+              key={id}
+              id={id}
+              title={song.title}
+              artist={song.artist}
+              album={song.album}
+              year={String(song.year ?? "")}
+              onEdit={() => openEditModal(song)}
+              onDelete={() => handleDelete(id)}
+            />
+          );
+        })}
       </CardGrid>
       <div
         style={{
