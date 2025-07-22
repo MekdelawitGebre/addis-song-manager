@@ -117,8 +117,8 @@ All API calls are intercepted and handled by MirageJS in development mode.
 - **Dev Server:**
   Runs on port 3000 with hot reloading.
 - **Environment Variables:**
-  - Set `API_BASE_URL` in your `.env` file for local development.
-  - For deployment (e.g., Vercel), set `API_BASE_URL` in the project’s environment variables dashboard.
+  - Set `API_BASE_URL` in  `.env` file for local development.
+  
 
 ---
 
