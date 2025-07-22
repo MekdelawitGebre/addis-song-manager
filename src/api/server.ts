@@ -49,7 +49,7 @@ export function makeServer({ environment = "development" } = {}) {
         let song = schema.find("song", id);
         if (song) {
           song.update(attrs);
-          return song.attrs; // <-- Return plain object, not Mirage model
+          return song.attrs; 
         }
         return new Response(404);
       });

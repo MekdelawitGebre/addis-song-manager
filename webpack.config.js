@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/", // important for client-side routing
+    publicPath: "/", 
     clean: true,
   },
   resolve: {
@@ -47,7 +47,7 @@ module.exports = {
     port: 3000,
     open: true,
     hot: true,
-    historyApiFallback: true, // This enables SPA fallback for React Router
+    historyApiFallback: true, 
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
 };
