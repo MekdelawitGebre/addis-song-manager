@@ -3,9 +3,7 @@ import styled from "@emotion/styled";
 import {
   FaTrashAlt,
   FaEdit,
-  FaUser,
-  FaCompactDisc,
-  FaCalendarAlt,
+  FaUser
 } from "react-icons/fa";
 
 import React from "react";
